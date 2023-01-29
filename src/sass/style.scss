@@ -1,5 +1,4 @@
-@import "libs/fonts";
-@import "libs/bootstrap-reboot.min";
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -11,3 +10,4 @@
   max-width: 950px;
   margin: 0 auto;
 }
+@import "blocks/header";
