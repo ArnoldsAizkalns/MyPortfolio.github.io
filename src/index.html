@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="/src/css/style.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>Portfolio</title>
     <!-- favicon -->
     <link
@@ -674,12 +674,12 @@
         <form action="#" class="contacts__form">
 
           <div class="contacts__input">
-            <input name="name" id="name" type="text">
+            <input required name="name" id="name" type="text">
             <label for="name">Name</label>
           </div>
 
           <div class="contacts__input">
-            <input name="email" id="email" type="email">
+            <input required name="email" id="email" type="email">
             <label for="enail">E-mail</label>
           </div>
 
@@ -687,9 +687,16 @@
             <textarea name="text" id="text"></textarea>
             <label for="text">About</label>
           </div>
-          <div><button class="btn">Send message</button></div>      
+          <div class="contacts__triggers">
+            <button class="contacts__btn btn">Send message</button>
+            <div class="contacts__policy">
+              <input required type="checkbox">
+              <span> I am agree with 
+                <a href="/policy.html">Privacy Policy?</a>
+              </span>
+            </div>
+          </div>      
         </form>
-
       </div>
     </div>
   </div>
